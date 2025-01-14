@@ -38,7 +38,7 @@ import com.denzcoskun.imageslider.BuildConfig;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 import com.onesignal.Continue;
