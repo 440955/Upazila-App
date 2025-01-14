@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/statusbar"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            app:tint="@color/white"
+            android:src="@drawable/developer_icon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:text="আসসালামুয়ালাইকুম!\nআমি মোঃ আরাফাত হোসেন সজিব। ডেভেলপার কাউনিয়া উপজেলা অ্যাপ। আমরা উপজেলার বিভিন্ন তথ্য সংগ্রহ করছি। উপজেলা সম্পর্কে তথ্য দিতে আমাদেরকে মেসেজ, ফোন অথবা ইমেইল করুন"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="30"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/dvp_message"
+            android:layout_weight="10"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textColor="@color/statusbar"
+            android:text="মেসেজ"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/dvp_phone"
+            android:layout_weight="10"
+            android:textStyle="bold"
+            android:textColor="@color/statusbar"
+            android:text="ফোন"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/dvp_email"
+            android:layout_weight="10"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textColor="@color/statusbar"
+            android:text="ইমেইল"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

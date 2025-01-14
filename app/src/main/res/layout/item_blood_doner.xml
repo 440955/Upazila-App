@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_doner"
+            android:src="@drawable/donor_icon"
+            app:civ_border_width="@dimen/_3sdp"
+            app:civ_border_color="@color/statusbar"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/image_doner"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/donerName"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_14ssp"
+                android:text="নাম:সজীব"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/bloodGroup"
+                android:textStyle="bold"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_16ssp"
+                android:text="ব্লাড গ্রুপ: O+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/donerAddress"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="ঠিকানাঃ হারাগাছ কাউনিয়া , রংপুর"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callDoner"
+            android:clickable="true"
+            android:foreground="@drawable/clike_effect"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dial_icon"
+            app:tint="@color/statusbar"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

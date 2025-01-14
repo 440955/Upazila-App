@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Thana_Police"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar7"
+        app:menu="@menu/search_view"
+        android:theme="@style/ThemeOverlay.Material3.Search."
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        android:background="@color/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_police"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/noInternet4"
+        android:visibility="gone"
+        android:textColor="@color/statusbar"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:text="আপনার ইন্টারনেট সংযোগটি চালু করুণ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

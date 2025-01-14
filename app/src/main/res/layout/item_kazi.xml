@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:backgroundTint="@color/white">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/kaziName"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_17ssp"
+                android:text="নাম:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/kaziAddress"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="ঠিকানাঃ হারাগাছ কাউনিয়া , রংপুর"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/kaziNumber"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="01777"
+                android:textColor="@color/statusbar"
+                android:textSize="@dimen/_13ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callKazi"
+            android:clickable="true"
+            android:foreground="@drawable/clike_effect"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dial_icon"
+            app:tint="@color/statusbar"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

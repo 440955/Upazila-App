@@ -1,0 +1,2468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Village_People"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar3"
+        app:title="গ্রাম ও জনসংখ্যা"
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        android:background="@color/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAd2"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_gravity="center"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6621199192974495/8025737479"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/shahidbag_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০৪ নং শহীদবাগ ইউনিয়নের আওতায় মোট ০৬টি গ্রাম আছে।\n*আদমশুমারী -২০১১ অনুযায়ী*"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গ্রামের নাম" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুরুষ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মহিল" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোট" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সাধু" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৫২০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২২৮০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৮০০" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বল্লভবিষূ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৩৫৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২১৪৪" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৫০০" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="খোর্দ্দভূতছাড়া" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬০৭" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫৯৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১২০০" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সাব্দী" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৫৬০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৪৪০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫০০০" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="প্রান্নাথচর" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১০০৫" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৯৫" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২০০০" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ভূতছাড়া" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৫৯০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৫১০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩১০০" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/modhupur_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০৬ নং টেপামধুপুর ইউনিয়নের আওতায় মোট ১২টি গ্রাম আছে।\n*আদমশুমারী -২০১১ অনুযায়ী*"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গ্রামের নাম" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুরুষ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মহিল" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোট" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="নিজদর্পা" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৬০৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৫৮৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩১৮৬" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="হরিচরণ শর্মা" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৫৫" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮৯৮" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৮৫৩" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="রাজিব"
+                    android:textColor="@color/statusbar"
+                    android:textSize="@dimen/_17ssp" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬২৮৭" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬১৬৩	" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১২৪৫০" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বিনোদ মাঝি" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮৫৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮২২" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৬৭৮" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="গণাই" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮৩৯" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮১৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৬৫৫" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বিশ্বনাথ" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৯৩৫" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৯১৮" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫৮৫৩" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="হয়বত খা" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৮৩৭" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৮৩১" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩৬৬৮" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সদরা তালুক" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২১৩০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২১০০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪২৩০" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="জিগাবাড়ী" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৮৯" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৩৭" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৯২৬" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বাজেমজকুর" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১০৭২" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১০৫৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২১২৮" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="নিলাম খরিদা" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৭৮৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৭৭৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩৫৫৬" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="আরাজি কানুয়া" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৮১" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৫৮" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৯৩৯" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sarai_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০১ নং সারাই ইউনিয়নের আওতায় মোট ০৯টি গ্রাম আছে।\n*আদমশুমারী -২০১১ অনুযায়ী*"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গ্রামের নাম" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুরুষ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মহিল" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মোট" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ধুমেরকুটি" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩৪২৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩৩৯৯" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬৮২২" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="উদয়নারায়ন"/>
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৩৮১" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১২৯১" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৬৭২" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="মাছহাড়ী" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬৯০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬৪৫" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৩৩৫" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ভগিরত" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৪৩৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৩৬৭" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৮০৩" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সারাঙ্গপুর" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬২৯" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬১২" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১২৪১" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="দরিমদন" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬৯৩" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫৩২" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১২২৫" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="আরাজী" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৮৮" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৫৬" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৪৪" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="মদামুদন" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৪৫৯" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৩৬১" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৮২০" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="কাঁচু" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৪২২" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৪৫০" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৮৭২" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/haragash_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০২ নং হারাগাছ ইউনিয়নের আওতায় মোট ০৭টি গ্রাম আছে।\n*আদমশুমারী -২০১১ অনুযায়ী*"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গ্রাম" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="লোক সংখ্যা" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ঠাকুরদাস" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৩২২" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ধুমগাড়া" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১১৬২" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সোনাতন" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩৩২৭" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="নাজিরদহ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯৬০৮" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="সীট নাজিরদহ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১০০০" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="চর নাজিরদহ" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩০৬০" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="পল্লীমারী" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৯২২" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/kursha_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০৩ নং কুর্শা ইউনিয়নের আওতায় প্রায় ২২টি গ্রাম আছে।\n*আদমশুমারী -২০১১ অনুযায়ী*"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গ্রাম" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="লোক সংখ্যা" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বাহাগিলী" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৩০১জন" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বীর ভদ্র" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২৫১জন" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="বিষ্ণুপুর" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১১৬৬জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="চান্দঘাপ" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৭৬১জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="চন্ডিপুর" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১৬৬৬জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ধর্ম্মেশ্বর" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২০১৫জন" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="গদাধর" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১০২৫জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="গোপাল" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১১৫৪জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="গোড়াই" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১১৭২জন" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/balapara_villageList"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:textStyle="bold"
+            android:text="০৫ নং বালাপাড়া ইউনিয়নের আওতায় ৯টি ওয়ার্ড আছে"
+            android:gravity="center"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/statusbar"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ওয়ার্ড" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="লোক সংখ্যা" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="১নং" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫৮৭৬জন" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="২নং" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৪০১জন" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৩নং" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="৪৩৬০জন"
+                    android:textColor="@color/statusbar"
+                    android:textSize="@dimen/_17ssp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪নং" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৪৭৩জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫নং" />
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৫৮৪৩জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬নং" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৯৫৭জন" />
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৭নং" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৭২৮জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৮নং" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৬১৬৪জন" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@color/statusbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৯নং" />
+
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textColor="@color/statusbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="৪৪৯০জন" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

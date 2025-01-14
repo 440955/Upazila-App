@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+        android:background="@drawable/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/app_icon"
+            app:civ_border_color="@color/white"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            />
+
+        <LinearLayout
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="কাউনিয়া উপজেলা"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="অনলাইন সেবা"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

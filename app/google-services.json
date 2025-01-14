@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75403891761",
+    "project_id": "kaunia-upzilla",
+    "storage_bucket": "kaunia-upzilla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75403891761:android:e907b84293c3e24dd17110",
+        "android_client_info": {
+          "package_name": "com.arafat.kauniaupzila"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKJwPsZ-LZJvu4eaEAxmH5PwMCQl7daEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="হোম পেজ"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:title="হোম"
+                android:icon="@drawable/home_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_notification"
+                android:title="নিউজ"
+                android:icon="@drawable/news_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_bloodDonar"
+                android:title="ব্লাড ডোনার"
+                android:icon="@drawable/donor_icon"
+                android:checkable="true"
+                />
+
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:title="ইউনিয়ন সমূহ"
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_saraiUnion"
+                android:title="সারাই ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_haragashUnion"
+                android:title="হারাগাছ ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_kurshaUnion"
+                android:title="	কুর্শা ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_shahidbagUnion"
+                android:title="শহীদবাগ ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_balaparaUnion"
+                android:title="বালাপারা ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_modhupurUnion"
+                android:title="টেপামধুপুর ইউনিয়ন পরিষদ"
+                android:icon="@drawable/union_icon"
+                android:checkable="true"
+                />
+
+        </menu>
+
+    </item>
+
+
+    <item
+        android:title="কমিউনিকেশন"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/nav_developer"
+                android:title="ডেভেলপার"
+                android:icon="@drawable/developer_icon"
+                android:checkable="true"
+                />
+
+            <item
+                android:id="@+id/nav_biggapon"
+                android:title="বিজ্ঞাপন দিন"
+                android:icon="@drawable/megaphone"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_email"
+                android:title="ইমেইল-করুণ"
+                android:icon="@drawable/mail_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_privacyPolicy"
+                android:title="প্রাইভেসি পলিসি"
+                android:icon="@drawable/privacypolicy_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_shareApp"
+                android:title="শেয়ার অ্যাপ"
+                android:icon="@drawable/share_icon"
+                android:checkable="true"
+                />
+            <item
+                android:id="@+id/nav_rating"
+                android:title="রিভিউ দিন"
+                android:icon="@drawable/rating_icon"
+                android:checkable="true"
+                />
+
+
+        </menu>
+
+    </item>
+
+</menu>
